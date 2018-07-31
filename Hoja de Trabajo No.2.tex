@@ -1,0 +1,114 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.1} 
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\title{Hoja de Trabajo No.2}
+\author{Kurth Michael Aguilar Ecobar - 20181242}
+\maketitle
+\section*{Ejercicio No.1}
+\begin{large}
+\textbf{Instrucciones:} \ {Demostrar utilizando induccion}  
+\end{large}
+\[  
+	\forall\ n.\ n^3\geq n^2
+\]
+donde $n\in\mathbb{N}$
+
+\
+\\\begin{large}
+\textbf{Solucion:}
+\end{large}
+
+\begin{itemize}
+\item \textbf{Caso Base:} \ n = 0
+ \[ \ 0^{3}\geq 0^{2}\ = 0\geq 0 \]
+
+\item \textbf{Caso Inductivo $n\in\mathbb{N}$}
+
+ Hipotesis inductiva: \[
+        \ n^3\geq n^2 \ = n*(n^2)\geq (n^2)
+\]
+ Sucesor: S(n) = (n+1) 
+ 
+\
+\\\textbf{Demostracion:}
+\
+\\ $ (n+1)(n+1)^2\geq (n+1)^2 $ 
+\
+\\ $ (n+1)\geq \frac{(n+1)^2}{(n+1)^2}$
+\
+\\ $ (n+1)\geq 1$
+\
+\\ $ n+1\geq 1 $
+\
+\\ $ n\geq 1-1 $
+\
+\\ $ n\geq 0 $ 
+
+\
+\\\textbf{Conclusion:}
+\ En la demostracion sobre el caso inductivo se puede apreciar que no se demuestra totalmente la hipotesis inductiva. Eso sucede porque hay casos en cuales la demostracion no llega a la hipotesis inductiva, sin embargo se pudo demostrar que $ \forall\ n$ siempre se cumplira la propiedad establecida, porque siempre sera mayor o igual que 0. 
+
+
+
+\end{itemize}
+
+\section*{Ejercicio No.2}
+
+\begin{large}
+\textbf{Instrucciones:} \ {Demostrar utilizando induccion la desigualdad de Bernoulli.}
+\end{large}
+
+\begin{center}
+$ \forall\ n.(1+x)^n \geq nx $
+\end{center}
+\
+donde $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+
+\
+\\\begin{large}
+\textbf{Solucion: }
+\end{large}
+
+\begin{itemize}
+\item \textbf{Casos Base:} \ $ n=0 $ \ y \ $ x=0 $
+\begin{center}
+\textbf{n = 0}
+\
+\\$ (1+x)^0 \geq 0*x $
+\
+\\$ 1 \geq 0 $
+
+\
+\\\textbf{x = 0}
+\
+\\ $ (1+0)^n \geq n*0 $
+\
+\\ $ 1^n \geq 0 $
+\
+\\\textbf{*Nota:} \ Recordar que $ n=0 $ con lo cual $ 1^n $ es igual a 1.
+\end{center}
+
+\item \textbf{Caso Inductivo:} \ $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+
+\ Hipotesis Inductiva:
+
+\ Sucesor: 
+\end{itemize}
+
+
+
+
+
+
+\end{document}
