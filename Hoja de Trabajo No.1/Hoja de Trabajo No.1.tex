@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.1} 
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\title{Hoja de Trabajo No.1 }
+\author{Kurth Michael Aguilar Ecobar - 20181242}
+\date{Fecha de entrega: 26 de Julio de 2018 }
+\maketitle
+\section*{Ejercicio No.2}
+\begin{itemize}
+\item \ El conjunto de nodos del grafo: \ $ \lbrace 1,2,3,4,5,6 \rbrace$
+\item \ El conjunto de vertices del grafo: 
+
+
+    $$
+        \left\langle \left\{
+            \begin{bmatrix}
+                \langle 1,2 \rangle & \langle 1,3 \rangle & \langle 1,4 \rangle \\
+                \langle 1,5 \rangle & \langle 2,3 \rangle & \langle 2,4 \rangle \\
+                \langle 2,6 \rangle & \langle 3,5 \rangle & \langle 3,6 \rangle \\
+                \langle 4,5 \rangle & \langle 4,6 \rangle & \langle 5,6 \rangle \\
+            \end{bmatrix}
+        \right\} \right\rangle
+    $$ 
+ 
+\end{itemize}
+\section*{Ejercicio No.3}
+\begin{itemize}
+\item \textbf{¿Que estructura de datos podria representar un lanzamiento de dados?}
+\
+\\ La estructura de datos adecuadad para presentar este fenomeno seria "un camino", ya que tiene un inicio y un fin, y puede pasar por todos los vertices. 
+\item \textbf{¿Que algoritmo podriamos utilizar para generar dicha estructura?}
+\
+\\ Debe existir un algoritmo en el cual, como indicado anteriormente, el punto de inicio sea "1", y a partir de eso se crea el lanzamiento del dado creando una rotacion, la cual da a conocer un camino de vertices que se pasan para llegar a el final del camino, sea el final de este camino uno de los nodos del grafo "1/6".
+
+Si el final del camino es un vertice no definido, por ejemplo: $ \langle 1,6 \rangle $, debe existir un camino en el cual se pase a un vertice que este definido para ese final, por ejemplo:  $ \langle 1,2 \rangle $ a $ \langle 2,6 \rangle  $. Siendo 6 el final del camino, se puede notar que tuvo que existir otro vertice de por medio para llegar a ese final.
+\item \textbf{¿Como nos aseguramos que ese algoritmo siempre produce un resultado?}
+\
+\\ Porque el algoritmo demuestra que no importa en que nodo empieza, siempre existira un nodo final, porque sea $\lbrace n \rbrace$ el nodo inicial y el final $\lbrace l \rbrace$ dado por el lanzamiento sea $ \langle n,l \rangle $  un vertice que no existe en el camino, se acude a un o mas vertices existentes $ \langle n,m \rangle $  a $ \langle m,l \rangle $ , para llegar al final 
+\end{itemize}
+
+\end{document}
