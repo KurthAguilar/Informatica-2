@@ -1,0 +1,71 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.1} 
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\title{Hoja de Trabajo No.3}
+\author{Kurth Michael Aguilar Ecobar - 20181242}
+\date{ Fecha de entrega: 16 de agosto de 2018 }
+\maketitle
+
+
+\section*{Ejercicio No.1}
+
+\begin{flushleft}
+\textbf{Instrucciones:} \ Utilizando la definicion de suma ($\oplus$) para los numeros naturales unarios, llevar
+a cabo la suma entre tres [$s(s(s(0)))$] y cuatro [$s(s(s(s(0))))$]. Debe elaborar todos
+los pasos de forma explicita. Como referencia, se presenta nuevamente la definici\'on de
+suma para numeros naturales unarios:
+\end{flushleft}
+
+\begin{center}
+$ n\oplus m := \left\{ 
+\begin{array}{l l}
+ m & \mbox{si } n=o \\ 
+ n & \mbox{si } m=o \\ 
+ s(i\oplus m) & \mbox{si } n=s(i) \\ 
+ \end{array}
+ \right.$
+\end{center}
+
+\
+\\\begin{large}
+\textbf{Solucion:}
+\end{large}
+\begin{itemize}
+\item En este caso se plantea la expresión de $ n\oplus m $ donde $ m $ debe ser sucesor de cualquier numero: $ s(i) $. Donde nuestro $ s(i) $ equivale a   \ $ s(s(s(s(0))))  $. 
+\item $n$ equivale a tres $ \left[ s(s(s(0))) \right]  $. 
+\item \textbf{Explicacion de la suma entre $ (n\oplus s(i)) $}
+\begin{center}
+$ n\oplus m $
+\
+\\$n\oplus s(i)$
+\
+\\$( s(s(s(0)))) \oplus s(s(s(s(0)))) \ = \ s[ s(s(s(0)))) \oplus s(s(s(0)))]$
+\
+\\$ s(s(s(s(s(0)))) \oplus s(s(0))))$
+\
+\\$ s(s(s(s(s(s(0)))) \oplus s(0))))$
+\
+\\$ s(s(s(s(s(s(s(0)))) \oplus 0) \Rightarrow $ \ Esta forma demuestra el caso en el cual $ n\oplus 0 \ = \ n$
+\
+\\ $[s(s(s(s(s(s(s(0)))))))] \ =  $ \ A la suma buscada de  $ cuatro\oplus tres$ 
+\end{center}
+\end{itemize}
+
+\section*{Ejercicio No.2}
+\section*{Ejercicio No.3}
+\section*{Ejercicio No.4}
+
+
+\end{document}
