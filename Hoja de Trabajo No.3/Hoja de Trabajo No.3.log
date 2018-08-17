@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.30)  2 AUG 2018 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.30)  16 AUG 2018 21:01
 entering extended mode
 **"./Hoja de Trabajo No.3.tex"
 ("Hoja de Trabajo No.3.tex"
@@ -176,19 +176,27 @@ msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Kurth Michael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
- ("Hoja de Trabajo No.3.aux"
+{C:/Users/Kurth Michael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
+
+("C:\Users\Kurth Michael\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscm
+r.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+ [2] [3] [4] ("Hoja de Trabajo No.3.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2067 strings out of 492973
- 26476 string characters out of 3123146
- 96048 words of memory out of 3000000
- 5951 multiletter control sequences out of 15000+200000
+ 2084 strings out of 492973
+ 26822 string characters out of 3123146
+ 98048 words of memory out of 3000000
+ 5965 multiletter control sequences out of 15000+200000
  11503 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,31p,241b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,31p,784b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Kurth Michael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmbx10.pfb><C:/Users/Kurth Michael/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Kurth Michael/AppData/Lo
@@ -200,9 +208,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Kurth Michael/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/K
 urth Michael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb>
-Output written on "Hoja de Trabajo No.3.pdf" (2 pages, 91561 bytes).
+Output written on "Hoja de Trabajo No.3.pdf" (4 pages, 101957 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

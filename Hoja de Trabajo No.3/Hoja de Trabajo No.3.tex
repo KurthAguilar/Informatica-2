@@ -64,8 +64,198 @@ $ n\oplus m $
 \end{itemize}
 
 \section*{Ejercicio No.2}
+\begin{flushleft}
+\textbf{Instrucciones: } \ Definir inductivamente una funci\'on para multiplicar ($\otimes$) numeros naturales unarios.
+\end{flushleft}
+\begin{center}
+$ n\otimes m := \left\{
+\begin{array}{l l}
+0 & \mbox{si } n=o \ \vee \ m=0 \\ 
+ n\otimes s(m) & \mbox{si } n\oplus n\otimes m\\ 
+ \end{array}
+ \right.$
+ 
+ \
+ \\\textbf{*Nota: } \ En este caso en la definicion de la multiplicacion con numeros unarios, se definieron los casos posibles que incluyen un caso base $ = 0 $, para demostrar la solucion en la presentacion de dicho caso. Al igual que en esta definicion se presenta la definicion para el sucesor de un numero en este caso $ s(m) $, para de esa manera generalizar los casos posibles de cualquier numero unario. Como se aprecia, se utilizo el operado de suma $ \oplus $, que solo significa  que tenemos la necesidad de eliminar mas de un operador.  La expresion $n\oplus n\otimes m$ es una suma unaria que tiene como caracteristica un producto en su segunda expresion. Para operarlo se puede usar las operaciones aritmeticas ya conocidas. 
+ \end{center}
+
 \section*{Ejercicio No.3}
+\begin{flushleft}
+\textbf{Instrucciones: } \ Verifique que su definici\'on de multiplicaci\'on es correcta multiplicando los siguientes valores:
+\end{flushleft}
+\begin{itemize}
+\item{$s(s(s(0)))\otimes 0$}
+\begin{itemize}
+\item \textbf{Verificacion: }
+\begin{center}
+\textbf{*Nota: } \ En este caso la presentacion de la operacion con la expresion $n\oplus n\otimes m$, es imposible, porque de acuerdo a los Axiomas de Peano $ 0 $ no tiene predecesor. Sin embargo, en la definicion de la multiplicacion se definio que en el caso de que $ m \vee n = 0$ el resultado daria $ 0 $. 
+\end{center}
+\end{itemize}
+
+\item{$s(s(s(0)))\otimes s(0)$}
+\begin{itemize}
+\item \textbf{Verificacion: }
+\begin{center}
+$s(s(s(0)))\otimes s(0) = s(s(s(0)))\oplus s(s(s(0)))\otimes 0$
+\
+\\ $\dots = s(s(s(0)))\oplus 0$
+\
+\\ $\dots = s(s(s(0)))$
+\
+\\$s(s(s(0))) = s(s(s(0)))$
+\end{center}
+\end{itemize}
+\item{$s(s(s(0)))\otimes s(s(0))$}
+\begin{itemize}
+\item \textbf{Verificacion: }
+\begin{center}
+$ s(s(s(0)))\otimes s(s(0)) = s(s(s(0)))\oplus s(s(s(0)))\otimes s(0)$
+\
+\\$\dots = s(s(s(0)))\oplus s(s(s(0)))$
+\
+\\ $\dots = s(s(s(s(s(s(0))))) $
+\
+\\ $s(s(s(s(s(s(0)))))  = s(s(s(s(s(s(0))))) $
+\end{center}
+\end{itemize}
+\end{itemize}
 \section*{Ejercicio No.4}
+\begin{flushleft}
+\textbf{Instrucciones: } \ Demostrar utilizando induccion.
+\end{flushleft}
+\begin{itemize}
+        \item{$a\oplus s(s(0))=s(s(a))$}
+        \begin{itemize}
+        \item \textbf{Demostracion: }
+        \begin{itemize}
+        \item \textbf{Caso Base: } \ $ a = 0 $
+        \begin{center}
+        $0\oplus s(s(0))=s(s(0))$
+        \
+        \\$ s(s(0))=s(s(0))$
+        
+        \end{center}
+        \item \textbf{Caso Inductivo: } \ $ \forall\ a$
+        \begin{itemize}
+        \item \textbf{Hipotesis Inductiva: } \ $a\oplus s(s(0))=s(s(a))$
+        \item \textbf{Sucesor: } \ $ s(a) \ \vee \ \ a\oplus 1 $
+        \begin{center}
+        $s(a)\oplus s(s(0)) = s(s(s(a))) $
+        \
+        \\ $s(a)\ominus s(0)\oplus s(s(0)) = s(s(s(a)))\ominus s(0) $
+        \
+        \\$ a\o\triangleleft\triangleleft\triangleleftplus s(s(0)) = s(s(s(a)))\ominus s(0) $
+        \
+        \\ $a\oplus s(s(0))=s(s(a))$
+        \end{center}
+        \end{itemize}
+        \end{itemize}
+        \end{itemize}
+        \item{$a \otimes b = b \otimes a$}
+        \begin{itemize}
+        \item \textbf{Demostracion: }
+        \begin{itemize}
+        \item \textbf{Caso Base: } \ $ a = 0$
+        \begin{center}
+        $0\otimes b = b\otimes 0$
+        \
+        \\
+        $ 0 = 0$
+       
+        \end{center}
+         \item \textbf{Caso Inductivo: } \ $ \forall\ a $
+         \begin{itemize}
+        \item \textbf{Hipotesis Inductiva: } \ $ a\otimes b = b\otimes a$
+        \item \textbf{Sucesor: }$ a+1$
+        \begin{center}
+        $  (a\oplus 1)\otimes b = b\otimes (a\oplus1)$
+        \
+        \\ $ ab \oplus b = ba \oplus b$
+        \
+        \\ $ ab \oplus b \ominus b= ba \oplus b\ominus b $
+        \
+        \\ $ ab = ba $
+        \
+        \\ $ a\otimes b = b\otimes a $
+        \end{center}
+         \end{itemize}
+        \end{itemize}
+        \end{itemize}
+        \item{$a \otimes (b \otimes c)=(a\otimes b)\otimes c$} 
+        \begin{itemize}
+        \item \textbf{Demostracion: }
+		\begin{itemize}
+		\item \textbf{Caso Base:} \ $ c = 0 $
+		\begin{center}
+		$ a \otimes (b \otimes 0)=(a\otimes b)\otimes 0$
+		\
+		\\ $ a\otimes (0) =(a\otimes b)\otimes 0 $
+		\
+		\\ $ 0 = 0 $
+	
+		\end{center}
+		\item \textbf{Caso Inductivo: } \ $\forall\ c $
+		\begin{itemize}
+		\item \textbf{Hipotesis Inductiva: } \ $ a \otimes (b \otimes c)=(a\otimes b)\otimes c$
+		\item \textbf{Sucesor: } \ $ c+1$
+		\begin{center}
+		$a \otimes (b \otimes (c\oplus 1))=(a\otimes b)\otimes (c\oplus 1)$
+		\
+		\\$ a\otimes(bc\oplus b) = abc\oplus ab$
+		\
+		\\$ abc\oplus ab = abc\oplus ab $
+		\
+		\\ $ abc\oplus ab\ominus ab = abc\oplus ab\ominus ab $
+		\
+		\\$ abc = abc $
+		\
+		\\ $ a\otimes b\otimes c= a\otimes b\otimes c $
+		\
+		\\ $ a \otimes (b \otimes c)=(a\otimes b)\otimes c$
+		\end{center}
+		\end{itemize}
+		\end{itemize}
+\end{itemize}               
+       
+       
+        \item{$(a\oplus b)\otimes c = (a\otimes c) \oplus (b \otimes c)$}
+        \begin{itemize}
+        \item \textbf{Demostracion:}
+        \begin{itemize}
+        \item \textbf{Caso Base: } \ $ c=0 $
+        \begin{center}
+        $(a\oplus b)\otimes 0 = (a\otimes 0) \oplus (b \otimes 0)$
+        \
+        \\ $ (a0\oplus b0) = (0)\oplus (0) $
+        \
+        \\ $ (0\oplus 0) = 0 $
+        \
+        \\ $ 0 = 0 $
+        \end{center}
+        \item \textbf{Caso Inductivo: } \ $ \forall\ c$ 
+        \begin{itemize}
+        \item \textbf{Hipotesis Inductiva: } \ $(a\oplus b)\otimes c = (a\otimes c) \oplus (b \otimes c)$
+        \item \textbf{Sucesor:} \ $ c+1$
+        \begin{center}
+        $(a\oplus b)\otimes (c\oplus 1) = (a\otimes (c\oplus 1)) \oplus (b \otimes (c\oplus 1))$
+        \
+        \\ $ ac\oplus bc\oplus a\oplus b = (ac\oplus a)\oplus (bc\oplus b)$
+        \
+        \\ $ ac\oplus bc\oplus a\oplus b = ac\oplus bc\oplus a\oplus b $
+        \
+       	\\ $ ac\oplus bc\oplus a\oplus b\ominus a\ominus b = ac\oplus bc\oplus a\oplus b\ominus a\ominus b $
+       	\
+       	\\ $ ac\oplus bc\ = ac\oplus bc $
+       	\
+       	\\$ (a\oplus b)\otimes c = ac\oplus bc $
+       	\
+       	\\ $(a\oplus b)\otimes c = (a\otimes c) \oplus (b \otimes c)$
+        \end{center}
+        \end{itemize}
+        \end{itemize}
+        \end{itemize}
+\end{itemize}
+
 
 
 \end{document}
