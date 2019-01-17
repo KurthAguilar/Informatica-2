@@ -1,3 +1,0 @@
-var _user$project$Main$duplicar = function (x) {
-	return x + x;
-};
