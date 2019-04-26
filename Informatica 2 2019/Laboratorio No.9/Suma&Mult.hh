@@ -6,7 +6,7 @@
 class Suma : public OperacionBinaria{
 
     public:
-    Suma(double* valor);
+    Suma();
     virtual double operar(const double op1, const double op2) const override;
 
 
